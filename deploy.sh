@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying new page...\033[0m"
 
 echo -e "\033[0;32mDeleting old folder...\033[0m"
-rm -rf /c/gits/canderskov.github.io/
+rm -rf ../canderskov.github.io/
 
 echo -e "\033[0;32mRunning hugo...\033[0m"
 hugo -d ../canderskov.github.io
