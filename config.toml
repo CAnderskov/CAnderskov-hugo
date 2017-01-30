@@ -1,6 +1,6 @@
 languageCode = "en-us"
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+title = "CAnderskov - Notes To Self"
+baseurl = "https://canderskov.github.io/"
 theme = "hugo-redlounge"
 
 [params]
