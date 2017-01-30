@@ -1,24 +1,21 @@
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo -e "\033[0;32mDeploying new page...\033[0m"
 
-# Build the project.
-hugo -t hugo-redlounge # if using a theme, replace by `hugo -t <yourtheme>`
+echo -e "\033[0;32mDeleting old folder...\033[0m"
+rm -rf /c/gits/canderskov.github.io/
 
-# Go To Public folder
-cd public
-# Add changes to git.
-git add -A
+echo -e "\033[0;32mRunning hugo...\033[0m"
+hugo -d ../canderskov.github.io
 
-# Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-  fi
-  git commit -m "$msg"
+echo -e "\033[0;32mChanging to blog directory...\033[0m"
+cd ../canderskov.github.io
 
-  # Push source and build repos.
-  git push origin master
+echo -e "\033[0;32mCommit and push the new build...\033[0m"
+git commit -am "Site Build (`date`)"
+git push
 
-  # Come Back
-  cd ..
+echo -e "\033[0;32mChange back to hugo soruce...\033[0m"
+cd ../CAnderskov-hugo
+
+echo -e "\033[0;32mDeploy complete.\033[0m"
