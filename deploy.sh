@@ -7,11 +7,9 @@ rm -rf ../canderskov.github.io
 
 echo -e "\033[0;32mChanging to blog directory...\033[0m"
 cd ../canderskov.github.io
+git pull 
 
 echo -e "\033[0;32mAdding git remote...\033[0m"
-git init
-git remote add origin git@github.com:CAnderskov/canderskov.github.io.git
-git pull 
 
 echo -e "\033[0;32mRunning hugo...\033[0m"
 hugo -d ../canderskov.github.io
