@@ -23,13 +23,13 @@
   </url>
   
   <url>
-    <loc>http://example.org/tags/bash/</loc>
+    <loc>http://example.org/categories/bash/</loc>
     <lastmod>2017-01-30T09:34:12+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/bash/</loc>
+    <loc>http://example.org/tags/bash/</loc>
     <lastmod>2017-01-30T09:34:12+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -40,20 +40,14 @@
   </url>
   
   <url>
-    <loc>http://example.org/tags/development/</loc>
-    <lastmod>2017-01-30T09:34:12+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://example.org/categories/development/</loc>
     <lastmod>2017-01-30T09:34:12+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/hugo/</loc>
-    <lastmod>2017-01-30T08:59:43+01:00</lastmod>
+    <loc>http://example.org/tags/development/</loc>
+    <lastmod>2017-01-30T09:34:12+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -64,8 +58,8 @@
   </url>
   
   <url>
-    <loc>http://example.org/tags/inlfuxdb/</loc>
-    <lastmod>2017-01-30T09:34:12+01:00</lastmod>
+    <loc>http://example.org/tags/hugo/</loc>
+    <lastmod>2017-01-30T08:59:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,7 +70,7 @@
   </url>
   
   <url>
-    <loc>http://example.org/tags/json/</loc>
+    <loc>http://example.org/tags/inlfuxdb/</loc>
     <lastmod>2017-01-30T09:34:12+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -88,19 +82,25 @@
   </url>
   
   <url>
+    <loc>http://example.org/tags/json/</loc>
+    <lastmod>2017-01-30T09:34:12+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/</loc>
     <lastmod>2017-01-30T09:34:12+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/notetoself/</loc>
+    <loc>http://example.org/categories/notetoself/</loc>
     <lastmod>2017-01-30T08:59:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/notetoself/</loc>
+    <loc>http://example.org/tags/notetoself/</loc>
     <lastmod>2017-01-30T08:59:43+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -112,13 +112,13 @@
   </url>
   
   <url>
-    <loc>http://example.org/tags/staticsites/</loc>
+    <loc>http://example.org/categories/staticsites/</loc>
     <lastmod>2017-01-30T08:59:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/staticsites/</loc>
+    <loc>http://example.org/tags/staticsites/</loc>
     <lastmod>2017-01-30T08:59:43+01:00</lastmod>
     <priority>0</priority>
   </url>
