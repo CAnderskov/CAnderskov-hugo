@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on My New Hugo Site</title>
+    <link>http://example.org/categories/hugo/index.xml</link>
+    <description>Recent content in Hugo on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://example.org/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hi Hugo! Nice To Meet You</title>
+      <link>http://example.org/post/HiHugoNiceToMeetYou/</link>
+      <pubDate>Mon, 30 Jan 2017 08:59:43 +0100</pubDate>
+      
+      <guid>http://example.org/post/HiHugoNiceToMeetYou/</guid>
+      <description>
+
+&lt;h3 id=&#34;getting-to-know-hugo&#34;&gt;Getting to know Hugo&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I first came across Static sites a while back, when reading something about something nerdy.. The guy writing the blog i cant remember was talking about how he finally finished migrating to jekyll.. I thought jekyll, what is that.. Ive for the longest time had the need to have a place to put notes about what i do for later use, my bookmark collection is getting out of hand, and most of the time i only use small snippets of what the bookmarked page contains, what i need is a library where i can write a short note about what ive used it for and a reference to it.&lt;/p&gt;
+
+&lt;p&gt;This is that..&lt;/p&gt;
+
+&lt;p&gt;So why am i on Hugo and not jekyll? Well, its simple, Hugo worked, Jekyll did not.. Or rather, Jekyll worked, with the default theme, as soon as i tried to change it it went nuts about layouts not found, fixing those errors made the entire thing go completely blank.. not wanting to was countless of hours on learning this static site thing i quickly moved on to look for alternatives.. Queue Hugo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;setting-up-hugo&#34;&gt;Setting up Hugo&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Download hugo executable from &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add hugo to path or add the directory with hugo.exe to path (the latter did not work for me, so i put the exe in a folder already in path seeing as my patiance was very short in getting Windows to not be Windows.)&lt;/li&gt;
+&lt;li&gt;Download a theme from &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Figure out and get to know Markdown and you are all set.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;quick-tips&#34;&gt;Quick tips&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Get gitbash, get used to it, never go back to windows cmd.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo server -w&lt;/code&gt; in a gitbash while you write your pages will auto update every time you save&lt;/li&gt;
+&lt;li&gt;if you are switching themes &lt;code&gt;hugo server -w&lt;/code&gt; needs to be restarted it will not update correctly, same goes for update to the index pages.&lt;/li&gt;
+&lt;li&gt;Current theme: &lt;a href=&#34;https://github.com/tmaiaroto/hugo-redlounge&#34;&gt;https://github.com/tmaiaroto/hugo-redlounge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
