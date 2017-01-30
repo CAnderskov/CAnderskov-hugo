@@ -1,0 +1,14 @@
+languageCode = "en-us"
+title = "My New Hugo Site"
+baseurl = "http://example.org/"
+theme = "hugo-redlounge"
+
+[params]
+    sidebartitle = "Canderskov"
+    sidebartagline = "Notes to self"
+    #sidebarphoto = "/img/photo.png"
+
+
+[[menu.main]]
+    name = "Posts"
+    url = "/post"
