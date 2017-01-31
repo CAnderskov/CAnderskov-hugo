@@ -16,20 +16,26 @@ if [ ! -d "../$PUBLICFOLDER" ]; then
    git clone git@github.com:CAnderskov/canderskov.github.io.git
 else
 	echo -e "\033[0;32mDirectory found, cleaning folder for new build..\033[0m"
+	cd ../$PUBLICFOLDER
 	rm -rf *
 fi
 
 echo -e "\033[0;32mMoving new html to repo folder...\033[0m"
-cp public/* ../$PUBLICFOLDER
+cp -r ../$SORUCEFOLDER/public/* ../$PUBLICFOLDER
 echo -e "\033[0;32mChanging to blog directory...\033[0m"
 cd ../$PUBLICFOLDER
 
 echo -e "\033[0;32mCommit and push the new build...\033[0m"
-#git add --a
-#git commit -am "Site Build (`date`)"
-#git push -f origin master
+git add --a
+git commit -am "Site Build (`date`)"
+git push -f origin master
 
 echo -e "\033[0;32mChange back to hugo soruce...\033[0m"
 cd ../$SORUCEFOLDER
 
-echo -e "\033[0;32mDeploy complete.\033[0m"
+echo -e "\033[0;32mSite Deploy complete.\033[0m"
+
+echo -e "\033[0;32mCommiting Hugo Soruce files..\033[0m"
+git add --a
+git commit -am "Site Source update (`date`)"
+git push -f origin master
