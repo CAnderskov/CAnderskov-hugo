@@ -10,10 +10,45 @@ date = "2017-01-30T09:34:12+01:00"
 
 ### Why
 > [Telegraf](https://github.com/influxdata/telegraf) supports reading json and writing it to influxdb, however as of writing this, it only support grabbing numeric values, I need to grab text as well. 
+Im sure there are smarter easier ways of doing this, and id love to hear about em, for now, this is what i was able to come up with
 
-> Im sure there are smarter easier ways of doing this, and id love to hear about em, for now, this is what i was able to come up with
+##### A snippet of the json the following bash script is scraping for context: 
 
-```bash
+~~~json
+
+{
+	ServerNames: [
+	{
+		Time: 1485883080000000000,
+		servername: "ServerName01",
+		Count: 27
+	},
+	{
+		Time: 1485883080000000000,
+		servername: "ServerName02",
+		Count: 1
+	}
+	]
+}
+
+~~~
+
+~~~html
+<section id="main">
+  <div>
+    <h1 id="title">{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+      {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+~~~
+
+
+> The bash script: 
+
+~~~ bash
+
 #!/bin/sh
 
 #JSON to influx line protocol reformatter, Since the built in json parser of telegraf have a bug handling arrays the simplets way to get arrays of datas into influx was to write this simple reformatter, from json to line.
@@ -50,5 +85,5 @@ s/=/\\\=/g; s/,/\\\,/g")
 done
 DATE=$(date +"%c")
 echo $DATE - Wrote $i entries to $INFLUXHOST >> /var/log/influxcollectors/$ROOT_NODE.log
-```
+~~~
 
